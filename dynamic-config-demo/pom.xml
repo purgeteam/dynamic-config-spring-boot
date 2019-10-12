@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>dynamic-config-starter-demo</module>
+        <module>dynamic-config-nacos-starter-demo</module>
     </modules>
 
 

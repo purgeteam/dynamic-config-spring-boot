@@ -10,6 +10,37 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>nacos-spring-boot-starter</artifactId>
+    <version>${nacos-starter.version}</version>
 
+    <properties>
+        <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.purgeteam</groupId>
+            <artifactId>dynamic-config-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Alibaba Spring Cloud -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
