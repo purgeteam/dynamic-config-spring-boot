@@ -23,11 +23,11 @@
 启动类添加`@EnableDynamicConfigEvent` 注解。
 ```
 @EnableDynamicConfigEvent
-@SpringBootApplication(scanBasePackages = {"io.deepblueai.frontdemo.service"})
-public class FrontDemoApplication {
+@SpringBootApplication
+public class DynamicConfigSpringBootApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(FrontDemoApplication.class, args);
+    SpringApplication.run(DynamicConfigSpringBootApplication.class, args);
   }
 
 }
