@@ -17,7 +17,7 @@ qq交流群:`812321371`
 
 ```
 <dependency>
-  <groupId>com.purge</groupId>
+  <groupId>com.purgeteam</groupId>
   <artifactId>dynamic-config-spring-boot-starter</artifactId>
   <version>0.1.0.RELEASE</version>
 </dependency>
