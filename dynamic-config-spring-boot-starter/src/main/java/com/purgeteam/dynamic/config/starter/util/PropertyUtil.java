@@ -80,11 +80,20 @@ public class PropertyUtil {
 
         HashMap<String, HashMap> result = new HashMap<>(16);
         for (String key : before.keySet()) {
+            HashMap<String, String> valueMap = new HashMap<>(16);
+            valueMap.put(BEFORE, String.valueOf(before.get(key)));
             if (!after.containsKey(key)) {
-                result.put(key, null);
+                valueMap.put(AFTER, null);
+                result.put(key, valueMap);
             } else if (!equal(before.get(key), after.get(key))) {
+                valueMap.put(AFTER, String.valueOf(after.get(key)));
+                result.put(key, valueMap);
+            }
+        }
+        for (String key : after.keySet()) {
+            if (!before.containsKey(key)) {
                 HashMap<String, String> valueMap = new HashMap<>(16);
-                valueMap.put(BEFORE, String.valueOf(before.get(key)));
+                valueMap.put(BEFORE, null);
                 valueMap.put(AFTER, String.valueOf(after.get(key)));
                 result.put(key, valueMap);
             }
