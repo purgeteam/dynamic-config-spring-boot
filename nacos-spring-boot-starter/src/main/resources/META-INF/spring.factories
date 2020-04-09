@@ -1,0 +1,3 @@
+# EnvironmentPostProcessor
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.purgeteam.nacos.starter.env.NacosDefaultPropertySourceEnvironmentPostProcessor
