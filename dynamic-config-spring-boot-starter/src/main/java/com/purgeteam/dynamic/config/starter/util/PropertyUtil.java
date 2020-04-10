@@ -82,9 +82,11 @@ public class PropertyUtil {
         for (String key : before.keySet()) {
             HashMap<String, String> valueMap = new HashMap<>(16);
             valueMap.put(BEFORE, String.valueOf(before.get(key)));
+            // 判断是否有新的 key 加入
             if (!after.containsKey(key)) {
                 valueMap.put(AFTER, null);
                 result.put(key, valueMap);
+            // 判断是否有同样 key 数据变更
             } else if (!equal(before.get(key), after.get(key))) {
                 valueMap.put(AFTER, String.valueOf(after.get(key)));
                 result.put(key, valueMap);
