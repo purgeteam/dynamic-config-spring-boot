@@ -5,7 +5,7 @@
 
     <groupId>com.purgeteam</groupId>
     <artifactId>dynamic-config-spring-boot</artifactId>
-    <version>0.1.0.RELEASE</version>
+    <version>0.1.1.RELEASE</version>
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
