@@ -5,7 +5,7 @@
     <parent>
         <artifactId>dynamic-config-demo</artifactId>
         <groupId>com.purgeteam</groupId>
-        <version>0.1.0.RELEASE</version>
+        <version>0.1.1.RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -16,6 +16,7 @@
         <dependency>
             <groupId>com.purgeteam</groupId>
             <artifactId>nacos-spring-boot-starter</artifactId>
+            <version>0.1.1.RELEASE</version>
         </dependency>
 
         <dependency>

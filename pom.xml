@@ -62,8 +62,6 @@
     </distributionManagement>
 
     <properties>
-        <dynamic-config-starter.version>0.1.0.RELEASE</dynamic-config-starter.version>
-        <nacos-starter.version>0.1.0.RELEASE</nacos-starter.version>
 
         <spring-boot.version>2.1.8.RELEASE</spring-boot.version>
         <spring-cloud-commons.version>2.1.2.RELEASE</spring-cloud-commons.version>
@@ -86,18 +84,6 @@
 
     <dependencyManagement>
         <dependencies>
-
-            <dependency>
-                <groupId>com.purgeteam</groupId>
-                <artifactId>dynamic-config-spring-boot-starter</artifactId>
-                <version>${dynamic-config-starter.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.purgeteam</groupId>
-                <artifactId>nacos-spring-boot-starter</artifactId>
-                <version>${nacos-starter.version}</version>
-            </dependency>
 
             <!-- Spring Boot -->
             <dependency>
